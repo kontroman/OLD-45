@@ -28,12 +28,16 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.tag == "Ground")
         {
-            isJumping = false;
-        }
 
-        if (col.collider.gameObject.layer == LayerMask.NameToLayer("2"))
-        {
-            Debug.Log("Layer 2");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Finish")
+        {
+
+        }
+    }
+
 }
