@@ -22,7 +22,6 @@ public class SpriteMaskController : MonoBehaviour
 
     void CreateNewSpriteMask()
     {
-
         GameObject newMask = Instantiate(prefabMask, mainMask.transform.position, Quaternion.identity);
         Destroy(newMask, 0.5f);
     }
