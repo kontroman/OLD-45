@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+
     void FixedUpdate()
     {
         if(gameObject.transform.position.y < -5)
@@ -54,9 +55,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Finish")
+        if (collision.gameObject.tag == "level_2")
         {
-
+            GameController.OpenLevel2();
+            Destroy(collision.gameObject);
         }
     }
 
