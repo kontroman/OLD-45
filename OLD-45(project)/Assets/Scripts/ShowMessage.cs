@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class ShowMessage : MonoBehaviour
 {
-    public string message;
-    public GameObject textM;
+    public GameObject sprite_1;
+    public GameObject sprite_2;
     private void Start()
     {
-        textM.GetComponent<TextMesh>().text = message;
+        sprite_1.SetActive(false);
+        sprite_2.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
         {
-            textM.SetActive(true);
+            sprite_1.SetActive(true);
+            sprite_2.SetActive(true);
         }
     }
 
@@ -22,7 +24,8 @@ public class ShowMessage : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            textM.SetActive(false);
+            sprite_1.SetActive(false);
+            sprite_2.SetActive(false);
         }
     }
 }

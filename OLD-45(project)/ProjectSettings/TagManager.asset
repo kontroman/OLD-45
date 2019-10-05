@@ -8,6 +8,7 @@ TagManager:
   - level_2
   - level_3
   - Level_2
+  - Enemy
   layers:
   - Default
   - TransparentFX
