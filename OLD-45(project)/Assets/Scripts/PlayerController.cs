@@ -62,8 +62,6 @@ public class PlayerController : MonoBehaviour
             GameController.OpenLevel2();
             Destroy(collision.gameObject);
         }
-        if (collision.CompareTag("Enemy"))
-            GameController.RestartGame();
     }
 
 }
