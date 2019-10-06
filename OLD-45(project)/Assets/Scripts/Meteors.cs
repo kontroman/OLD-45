@@ -20,7 +20,7 @@ public class Meteors : MonoBehaviour
 
     void CreateMeteor()
     {
-        for(int i = 0; i<3; i++)
+        for(int i = 0; i<2; i++)
         {
             GameObject meteor = Instantiate(meteor_prefab, GetPosition(), Quaternion.identity);
             Destroy(meteor, 15f);
