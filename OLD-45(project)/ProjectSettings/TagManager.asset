@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Level_3
   - LEVEL_3
+  - Stone
   layers:
   - Default
   - TransparentFX

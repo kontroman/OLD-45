@@ -8,8 +8,10 @@ public class GameController : MonoBehaviour
     public static GameObject MeteorsObj;
     private static GameObject level_2;
     private static GameObject level_3;
+    public static GameObject stone1;
     private void Start()
     {
+        stone1 = GameObject.FindGameObjectWithTag("Stone");
         MeteorsObj = GameObject.FindGameObjectWithTag("Respawn");
         MeteorsObj.SetActive(false);
         level_2 = GameObject.FindGameObjectWithTag("Level_2");
@@ -44,6 +46,7 @@ public class GameController : MonoBehaviour
     }
     public static void OpenLevel3()
     {
+        stone1.GetComponent<BoxCollider2D>().enabled = false;
         level_3.SetActive(true);
     }
 }
