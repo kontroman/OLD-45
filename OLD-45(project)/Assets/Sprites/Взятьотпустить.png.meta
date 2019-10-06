@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: c8929a9882cbe7b43aba7fc5d204e9bf
+guid: 6c5c3140df46a544c8fb51d843708984
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7562320017197475482
-    second: 154_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -43,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 37, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -85,32 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 154_0
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 26
-        width: 1009
-        height: 620
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79efdb74ab75d4d4695954da88ad9c24
-      internalID: -7562320017197475482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 27d26027972b8674f8e0cbd8946d6aad
+    spriteID: e6feb902e10256042859c688da93bb9a
     internalID: 0
     vertices: []
     indices: 
