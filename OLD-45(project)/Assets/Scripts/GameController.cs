@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public static GameObject MeteorsObj;
     private static GameObject level_2;
+    private static GameObject level_3;
     private void Start()
     {
+        MeteorsObj = GameObject.FindGameObjectWithTag("Respawn");
+        MeteorsObj.SetActive(false);
         level_2 = GameObject.FindGameObjectWithTag("Level_2");
         level_2.SetActive(false);
+        level_3 = GameObject.FindGameObjectWithTag("LEVEL_3");
+        level_3.SetActive(false);
     }
 
     void Update()
@@ -34,5 +40,10 @@ public class GameController : MonoBehaviour
     public static void OpenLevel2()
     {
         level_2.SetActive(true);
+        MeteorsObj.SetActive(true);
+    }
+    public static void OpenLevel3()
+    {
+        level_3.SetActive(true);
     }
 }

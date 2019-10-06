@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(gameObject.transform.position.y < -5)
+        if (gameObject.transform.position.y < -5)
         {
             GameController.RestartScene();
         }
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = sprite_right;
         }
-        else if(x < 0)
+        else if (x < 0)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = sprite_left;
         }
@@ -49,8 +49,8 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.tag == "Ground")
         {
-            if(isJumping)
-            CamShaker.DoShake(1, .5f);
+            if (isJumping)
+                CamShaker.DoShake(1, .5f);
             isJumping = false;
         }
     }
@@ -62,6 +62,10 @@ public class PlayerController : MonoBehaviour
             GameController.OpenLevel2();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "level_3")
+        {
+            GameController.OpenLevel3();
+            Destroy(collision.gameObject);
+        }
     }
-
 }

@@ -12,7 +12,7 @@ public class SafeCode : MonoBehaviour
         string codeText = code.ToString();
         if (_field.text == codeText)
         {
-            //12312
+            GameController.FinishScene();
         }
         else
         {
