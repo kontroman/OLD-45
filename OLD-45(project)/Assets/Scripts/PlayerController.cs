@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         if(gameObject.transform.position.y < -5)
         {
-            GameController.RestartGame();
+            GameController.RestartScene();
         }
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
@@ -62,8 +62,6 @@ public class PlayerController : MonoBehaviour
             GameController.OpenLevel2();
             Destroy(collision.gameObject);
         }
-        if (collision.CompareTag("Enemy"))
-            GameController.RestartGame();
     }
 
 }

@@ -17,10 +17,18 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
             RestartGame();
     }
-
+    
     public static void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public static void RestartScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public static void FinishScene()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public static void OpenLevel2()
