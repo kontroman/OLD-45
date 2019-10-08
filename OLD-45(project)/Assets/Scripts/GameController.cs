@@ -9,15 +9,20 @@ public class GameController : MonoBehaviour
     private static GameObject level_2;
     private static GameObject level_3;
     public static GameObject stone1;
+    public GameObject field;
+    private void Awake()
+    {
+        MeteorsObj = GameObject.FindGameObjectWithTag("Respawn");
+        MeteorsObj.SetActive(false);
+    }
     private void Start()
     {
         stone1 = GameObject.FindGameObjectWithTag("Stone");
-        MeteorsObj = GameObject.FindGameObjectWithTag("Respawn");
-        MeteorsObj.SetActive(false);
         level_2 = GameObject.FindGameObjectWithTag("Level_2");
         level_2.SetActive(false);
         level_3 = GameObject.FindGameObjectWithTag("LEVEL_3");
         level_3.SetActive(false);
+        field.SetActive(false);
     }
 
     void Update()
@@ -43,6 +48,7 @@ public class GameController : MonoBehaviour
     {
         level_2.SetActive(true);
         MeteorsObj.SetActive(true);
+        MeteorsObj.GetComponent<Meteors>().enabled = true;
     }
     public static void OpenLevel3()
     {

@@ -9,7 +9,7 @@ public class Meteors : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("CreateMeteor", 1, 4f);
+        InvokeRepeating("CreateMeteor", 1f, 4f);
     }
 
     Vector3 GetPosition()

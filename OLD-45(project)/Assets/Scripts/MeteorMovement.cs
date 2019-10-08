@@ -13,6 +13,6 @@ public class MeteorMovement : MonoBehaviour
     }
     private void Update()
     {
-        gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, direction, speed*Time.deltaTime);
+        gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, -direction, speed*Time.deltaTime);
     }
 }
